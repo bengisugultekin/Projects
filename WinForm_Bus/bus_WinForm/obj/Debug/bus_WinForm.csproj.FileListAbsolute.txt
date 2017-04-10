@@ -1,0 +1,10 @@
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\bin\Debug\bus_WinForm.exe.config
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\bin\Debug\bus_WinForm.exe
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\bin\Debug\bus_WinForm.pdb
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.Form1.resources
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.Form2.resources
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.Properties.Resources.resources
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.exe
+C:\Users\Bengisu\Source\Repos\Projects\bus_WinForm\bus_WinForm\obj\Debug\bus_WinForm.pdb

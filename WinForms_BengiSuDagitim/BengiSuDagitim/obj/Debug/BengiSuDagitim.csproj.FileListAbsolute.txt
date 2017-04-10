@@ -1,0 +1,14 @@
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\BengiSuDagitim.exe.config
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\BengiSuDagitim.exe
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\BengiSuDagitim.pdb
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\EntityFramework.dll
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\EntityFramework.xml
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.Form1.resources
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.Migrations.InitialCreate.resources
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.Properties.Resources.resources
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.exe
+C:\Users\Bengisu\Source\Repos\Projects\BengiSuDagitim\BengiSuDagitim\obj\Debug\BengiSuDagitim.pdb

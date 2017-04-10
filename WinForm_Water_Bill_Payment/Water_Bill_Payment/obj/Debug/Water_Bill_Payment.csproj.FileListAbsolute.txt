@@ -1,0 +1,11 @@
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\bin\Debug\Water_Bill_Payment.exe.config
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\bin\Debug\Water_Bill_Payment.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\bin\Debug\Water_Bill_Payment.pdb
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.AccountInfo.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.Bill.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.FormRegistration.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.Properties.Resources.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Water_Bill_Payment\Water_Bill_Payment\obj\Debug\Water_Bill_Payment.pdb
