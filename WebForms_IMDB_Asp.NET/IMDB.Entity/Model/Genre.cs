@@ -6,6 +6,7 @@
 
         public string GenreName { get; set; }
 
+        public bool IsDeleted { get; set; }
 
         public override string ToString()
         {
@@ -14,5 +15,5 @@
 
     }
 
-     
+
 }

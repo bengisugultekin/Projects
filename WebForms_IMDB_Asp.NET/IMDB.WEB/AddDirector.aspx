@@ -59,6 +59,7 @@
             </ul>
         </div>
     </nav>
+
     <form id="form1" runat="server">
         <div class="container">
             <h1 class="alert alert-warning">Add Director</h1>
@@ -69,7 +70,7 @@
                         <td class="auto-style1" style="font-weight: bold;">
                             <asp:Label ID="Label1" runat="server" Text="Director"></asp:Label>
                         </td>                        
-                        <td><asp:TextBox ID="TextBoxDirectorName" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td><input id="DirectorName" type="text" class="form-control" runat="server" required /></td>
                     </tr>                    
                     
                 </table>

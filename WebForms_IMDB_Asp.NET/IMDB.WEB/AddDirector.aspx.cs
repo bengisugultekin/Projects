@@ -14,7 +14,7 @@ namespace IMDB.WEB
         protected void ButtonSave_Click(object sender, EventArgs e)
         {
             Director newDirector = new Director();
-            newDirector.DirectorName = TextBoxDirectorName.Text;
+            newDirector.DirectorName = DirectorName.Value;
 
             DirectorRepository.AddDirector(newDirector);
 

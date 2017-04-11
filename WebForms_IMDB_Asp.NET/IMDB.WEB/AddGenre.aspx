@@ -67,7 +67,7 @@
                         <td class="auto-style1" style="font-weight: bold;">
                             <asp:Label ID="Label1" runat="server" Text="Genre"></asp:Label>
                         </td>                        
-                        <td><asp:TextBox ID="TextBoxGenreName" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td><input id="GenreName" type="text" class="form-control" runat="server" required placeholder="e.g., Horror" /></td>
                     </tr>                    
                     
                 </table>

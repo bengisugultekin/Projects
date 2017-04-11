@@ -37,7 +37,7 @@ namespace IMDB.WEB {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxMovieName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText TextBoxMovieName;
         
         /// <summary>
         /// Label2 control.
@@ -91,7 +91,7 @@ namespace IMDB.WEB {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText TextBoxDescription;
         
         /// <summary>
         /// Label5 control.
@@ -109,7 +109,7 @@ namespace IMDB.WEB {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxReleaseDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl TextBoxReleaseDate;
         
         /// <summary>
         /// Label6 control.
@@ -127,7 +127,7 @@ namespace IMDB.WEB {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxScore;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl TextBoxScore;
         
         /// <summary>
         /// ButtonSave control.

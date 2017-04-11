@@ -11,7 +11,7 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Genre.OrderBy(g => g.GenreName).ToList();
+                return db.Genre.Where(g => g.IsDeleted == false).OrderBy(g => g.GenreName).ToList();
             }
         }
 
@@ -19,8 +19,14 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                db.Genre.Add(genre);
-                db.SaveChanges();
+                var result = db.Genre.FirstOrDefault(g => g.GenreName == genre.GenreName);
+
+                if (result == null)
+                {
+                    db.Genre.Add(genre);
+                    db.SaveChanges();
+                }
+
             }
         }
 

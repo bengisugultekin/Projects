@@ -15,24 +15,24 @@ namespace IMDB.WEB
 
                 DropDownListGenre.DataSource = GenreRepository.GetAllGenres();
                 DropDownListGenre.DataBind();
-           
+
                 int id = int.Parse(Request.QueryString["ID"]);
 
                 var movie = MovieRepository.GetViewMovie(id);
 
-                TextBoxMovieName.Text = movie.MovieName;
+                MovieName.Value = movie.MovieName;
 
                 DropDownListDirectorName.ClearSelection();
                 DropDownListDirectorName.Items.FindByValue(movie.DirectorName).Selected = true;
                 DropDownListGenre.ClearSelection();
                 DropDownListGenre.Items.FindByValue(movie.GenreName).Selected = true;
-                TextBoxDescription.Text = movie.Description;
-                TextBoxReleaseDate.Text = movie.ReleaseDate.ToString();
-                TextBoxScore.Text = movie.Score.ToString();
+                Description.Value = movie.Description;
+                ReleaseDate.Value = movie.ReleaseDate.ToString();
+                Score.Value = movie.Score.ToString();
 
                 Title = movie.MovieName + " (" + movie.ReleaseDate + ")";
             }
-           
+
         }
 
         protected void ButtonSave_Click(object sender, EventArgs e)
@@ -40,12 +40,12 @@ namespace IMDB.WEB
             ViewMovie movie = new ViewMovie();
 
             movie.MovieID = int.Parse(Request.QueryString["ID"]);
-            movie.MovieName = TextBoxMovieName.Text;
+            movie.MovieName = MovieName.Value;
             movie.DirectorName = DropDownListDirectorName.SelectedItem.Text;
             movie.GenreName = DropDownListGenre.SelectedItem.Text;
-            movie.Description = TextBoxDescription.Text;
-            movie.ReleaseDate = int.Parse(TextBoxReleaseDate.Text);
-            movie.Score = decimal.Parse(TextBoxScore.Text);
+            movie.Description = Description.Value;
+            movie.ReleaseDate = int.Parse(ReleaseDate.Value);
+            movie.Score = decimal.Parse(Score.Value);
             movie.TotalScore = movie.Score;
             movie.ScoreCounter = 1;
 

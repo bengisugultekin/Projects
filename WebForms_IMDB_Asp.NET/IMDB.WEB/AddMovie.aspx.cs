@@ -22,12 +22,12 @@ namespace IMDB.WEB
         {
             ViewMovie newMovie = new ViewMovie();
 
-            newMovie.MovieName = TextBoxMovieName.Text;
+            newMovie.MovieName = TextBoxMovieName.Value;
             newMovie.DirectorName = DropDownListDirectorName.SelectedItem.Text;
             newMovie.GenreName = DropDownListGenre.SelectedItem.Text;
-            newMovie.Description = TextBoxDescription.Text;
-            newMovie.ReleaseDate = int.Parse(TextBoxReleaseDate.Text);
-            newMovie.Score = decimal.Parse(TextBoxScore.Text);
+            newMovie.Description = TextBoxDescription.Value;
+            newMovie.ReleaseDate = int.Parse(TextBoxReleaseDate.Value);
+            newMovie.Score = decimal.Parse(TextBoxScore.Value);
             newMovie.TotalScore = newMovie.Score;
             newMovie.ScoreCounter = 1;
 

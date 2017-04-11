@@ -21,6 +21,7 @@
         .auto-style1 {
             width: 169px;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         }
@@ -64,36 +65,50 @@
             <div class="table-responsive">
                 <table class="table table-responsive table-hover table-condensed">
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label1" runat="server" Text="Movie"></asp:Label></td>                        
-                        <td><asp:TextBox ID="TextBoxMovieName" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label1" runat="server" Text="Movie"></asp:Label></td>
+                        <td>
+                            <input id="MovieName" type="text" class="form-control" runat="server" autocomplete="off" required />
+                        </td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label2" runat="server" Text="Director"></asp:Label></td>
-                        <td><asp:DropDownList ID="DropDownListDirectorName" CssClass="form-control" runat="server"></asp:DropDownList></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label2" runat="server" Text="Director"></asp:Label></td>
+                        <td>
+                            <asp:DropDownList ID="DropDownListDirectorName" CssClass="form-control" runat="server"></asp:DropDownList></td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label3" runat="server" Text="Genre"></asp:Label></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label3" runat="server" Text="Genre"></asp:Label></td>
                         <td>
                             <asp:DropDownList ID="DropDownListGenre" CssClass="form-control" runat="server"></asp:DropDownList></td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label4" runat="server" Text="Description"></asp:Label></td>
-                        <td><asp:TextBox ID="TextBoxDescription" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label4" runat="server" Text="Description"></asp:Label></td>
+                        <td>
+                            <input id="Description" type="text" class="form-control" runat="server" autocomplete="off" required /></td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label5" runat="server" Text="Release Date"></asp:Label></td>
-                        <td><asp:TextBox ID="TextBoxReleaseDate" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label5" runat="server" Text="Release Date"></asp:Label></td>
+                        <td>
+                            <input id="ReleaseDate" type="number" class="form-control" runat="server" maxlength="4" min="1900" max="2030" required placeholder="e.g., 2012" /></td>
                     </tr>
                     <tr>
-                        <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label6" runat="server" Text="Score"></asp:Label></td>
-                        <td><asp:TextBox ID="TextBoxScore" CssClass="form-control" runat="server"></asp:TextBox></td>
+                        <td class="auto-style1" style="font-weight: bold">
+                            <asp:Label ID="Label6" runat="server" Text="Score"></asp:Label></td>
+                        <td>
+                            
+                            <input id="Score" max="10" min="1" step="0.10" autocomplete="off" class="form-control" type="number" runat="server" required /></td>
                     </tr>
-                    
+
                 </table>
                 <asp:Button ID="ButtonSave" CssClass="btn btn-default" runat="server" Text="SAVE" OnClick="ButtonSave_Click" />
             </div>
 
         </div>
     </form>
+    
 </body>
 </html>

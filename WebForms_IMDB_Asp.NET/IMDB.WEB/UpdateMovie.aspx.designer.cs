@@ -31,13 +31,13 @@ namespace IMDB.WEB {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBoxMovieName control.
+        /// MovieName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxMovieName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText MovieName;
         
         /// <summary>
         /// Label2 control.
@@ -85,13 +85,13 @@ namespace IMDB.WEB {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// TextBoxDescription control.
+        /// Description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Description;
         
         /// <summary>
         /// Label5 control.
@@ -103,13 +103,13 @@ namespace IMDB.WEB {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// TextBoxReleaseDate control.
+        /// ReleaseDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxReleaseDate;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl ReleaseDate;
         
         /// <summary>
         /// Label6 control.
@@ -121,13 +121,13 @@ namespace IMDB.WEB {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// TextBoxScore control.
+        /// Score control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxScore;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Score;
         
         /// <summary>
         /// ButtonSave control.

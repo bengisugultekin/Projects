@@ -16,11 +16,13 @@
 
         public decimal totalScore { get; set; }
 
+        public bool IsDeleted { get; set; }
+
         public int GenreID { get; set; }
 
         public int DirectorID { get; set; }
 
-       
+
         //mapping
         public Genre Genre { get; set; }
         public Director Director { get; set; }
@@ -30,7 +32,7 @@
         {
             ScoreCounter++;
             totalScore += addScore;
-            return totalScore / ScoreCounter;           
+            return totalScore / ScoreCounter;
         }
     }
 

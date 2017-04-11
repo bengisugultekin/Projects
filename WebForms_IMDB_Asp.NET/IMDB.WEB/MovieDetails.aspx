@@ -27,6 +27,20 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         }
+        .score{
+            width:60px;             
+            border-color:transparent; 
+            background-color:transparent;
+            font-weight:900;
+            font-size: 20px;
+            padding: 0px;
+            margin-top: 0px;
+        }
+
+        .score:focus{
+            outline-color:transparent;
+        }
+       
         </style>
 
 </head>
@@ -92,19 +106,12 @@
                     </tr>
                     <tr>
                         <td class="auto-style1" style="font-weight: bold"><asp:Label ID="Label" runat="server" Text="Your Score"></asp:Label></td>
-                        <td class="auto-style2"><asp:DropDownList ID="DropDownListScore" CssClass="form-control-static" runat="server" Width="56px">
-                            <asp:ListItem>1</asp:ListItem>
-                            <asp:ListItem>2</asp:ListItem>
-                            <asp:ListItem>3</asp:ListItem>
-                            <asp:ListItem>4</asp:ListItem>
-                            <asp:ListItem>5</asp:ListItem>
-                            <asp:ListItem>6</asp:ListItem>
-                            <asp:ListItem>7</asp:ListItem>
-                            <asp:ListItem>8</asp:ListItem>
-                            <asp:ListItem>9</asp:ListItem>
-                            <asp:ListItem>10</asp:ListItem>
-                            </asp:DropDownList>
-                        <asp:Button ID="ButtonSubmit" runat="server" CssClass="btn btn-default" Text="Submit" OnClick="ButtonSubmit_Click" /></td>
+                        <td class="auto-style2">
+                            
+                            <input id="Score" type="number" min="1" max="10" class="form-control-static score" runat="server" value="1" required />     
+                           
+                            <asp:Button Text="Submit" runat="server" CssClass="btn btn-default" OnClick="ButtonSubmit_Click" />
+                        </td>
                     </tr>
                     
                 </table>

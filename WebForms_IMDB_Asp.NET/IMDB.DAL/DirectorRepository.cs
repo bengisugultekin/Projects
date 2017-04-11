@@ -1,6 +1,5 @@
 ﻿using IMDB.Entity.Model;
 using IMDB.Entity.Model.DBConnection;
-using IMDB.Entity.Model.ViewModel;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,7 +11,8 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Director.ToList();
+
+                return db.Director.Where(d => d.IsDeleted == false).ToList();
             }
         }
 
@@ -20,8 +20,12 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                db.Director.Add(director);
-                db.SaveChanges();
+                if (db.Director.SingleOrDefault(d => d.DirectorName == director.DirectorName) == null)
+                {
+                    db.Director.Add(director);
+                    db.SaveChanges();
+                }
+
             }
         }
 
@@ -30,7 +34,7 @@ namespace IMDB.DAL
             using (IMDbContext db = new IMDbContext())
             {
                 var result = db.Director.Find(id);
-                db.Director.Remove(result);
+                result.IsDeleted = true;
                 db.SaveChanges();
             }
         }
@@ -53,6 +57,6 @@ namespace IMDB.DAL
             }
         }
 
-        
+
     }
 }

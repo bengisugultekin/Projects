@@ -139,21 +139,12 @@ namespace IMDB.WEB {
         protected global::System.Web.UI.WebControls.Label Label;
         
         /// <summary>
-        /// DropDownListScore control.
+        /// Score control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListScore;
-        
-        /// <summary>
-        /// ButtonSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonSubmit;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Score;
     }
 }

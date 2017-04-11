@@ -10,22 +10,25 @@ namespace IMDB.DAL
     {
         public static List<ViewMovie> GetAllMovies()
         {
-            using(IMDbContext db = new IMDbContext())
+            using (IMDbContext db = new IMDbContext())
             {
-                return db.Movie.Select(m => new ViewMovie
-                {
-                    MovieID = m.MovieID,
-                    MovieName = m.MovieName,
-                    Description = m.Description,
-                    ReleaseDate = m.ReleaseDate,
-                    Score = m.Score,
-                    ScoreCounter = m.ScoreCounter,
-                    DirectorID = m.DirectorID,
-                    GenreID = m.GenreID,
+                return db.Movie
+                    .Where(m => m.IsDeleted == false)
+                    .Select(m => new ViewMovie
+                    {
+                        MovieID = m.MovieID,
+                        MovieName = m.MovieName,
+                        Description = m.Description,
+                        ReleaseDate = m.ReleaseDate,
+                        Score = m.Score,
+                        ScoreCounter = m.ScoreCounter,
+                        DirectorID = m.DirectorID,
+                        GenreID = m.GenreID,
 
-                    GenreName = m.Genre.GenreName,
-                    DirectorName = m.Director.DirectorName,
-                }).ToList();
+                        GenreName = m.Genre.GenreName,
+                        DirectorName = m.Director.DirectorName,
+                    })
+                    .ToList();
             }
         }
 
@@ -35,16 +38,17 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                Movie newMovie = new Movie();
-
-                newMovie.MovieName = vm.MovieName;
-                newMovie.Description = vm.Description;
-                newMovie.ReleaseDate = vm.ReleaseDate;
-                newMovie.Score = vm.Score;
-                newMovie.ScoreCounter = vm.ScoreCounter;
-                newMovie.totalScore = vm.TotalScore;
-                newMovie.GenreID = db.Genre.FirstOrDefault(g => g.GenreName == vm.GenreName).GenreID;
-                newMovie.DirectorID = db.Director.FirstOrDefault(d => d.DirectorName == vm.DirectorName).DirectorID;
+                Movie newMovie = new Movie()
+                {
+                    MovieName = vm.MovieName,
+                    Description = vm.Description,
+                    ReleaseDate = vm.ReleaseDate,
+                    Score = vm.Score,
+                    ScoreCounter = vm.ScoreCounter,
+                    totalScore = vm.TotalScore,
+                    GenreID = db.Genre.FirstOrDefault(g => g.GenreName == vm.GenreName).GenreID,
+                    DirectorID = db.Director.FirstOrDefault(d => d.DirectorName == vm.DirectorName).DirectorID
+                };
 
                 db.Movie.Add(newMovie);
                 db.SaveChanges();
@@ -57,18 +61,18 @@ namespace IMDB.DAL
             {
                 return db.Movie.Where(m => m.MovieID == id)
                     .Select(m => new ViewMovie
-                {
-                    MovieID = m.MovieID,
-                    MovieName = m.MovieName,
-                    Description = m.Description,
-                    ReleaseDate = m.ReleaseDate,
-                    Score = m.Score,
-                    ScoreCounter = m.ScoreCounter,
+                    {
+                        MovieID = m.MovieID,
+                        MovieName = m.MovieName,
+                        Description = m.Description,
+                        ReleaseDate = m.ReleaseDate,
+                        Score = m.Score,
+                        ScoreCounter = m.ScoreCounter,
 
-                    GenreName = m.Genre.GenreName,
-                    DirectorName = m.Director.DirectorName,
+                        GenreName = m.Genre.GenreName,
+                        DirectorName = m.Director.DirectorName,
 
-                }).FirstOrDefault();
+                    }).FirstOrDefault();
             }
         }
 
@@ -77,7 +81,7 @@ namespace IMDB.DAL
             using (IMDbContext db = new IMDbContext())
             {
                 var result = db.Movie.Find(id);
-                db.Movie.Remove(result);
+                result.IsDeleted = true;
                 db.SaveChanges();
 
             }
@@ -100,7 +104,7 @@ namespace IMDB.DAL
                 uptadedMovie.Score = vm.Score;
                 uptadedMovie.totalScore = vm.TotalScore;
                 uptadedMovie.ScoreCounter = vm.ScoreCounter;
-                
+
                 db.SaveChanges();
             }
         }
@@ -132,7 +136,8 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Movie.Where(m => m.DirectorID == directorID).
+                return db.Movie
+                    .Where(m => m.DirectorID == directorID && m.IsDeleted == false).
                     Select(m => new ViewMovie
                     {
                         DirectorID = m.DirectorID,
@@ -142,7 +147,7 @@ namespace IMDB.DAL
                         MovieName = m.MovieName,
                         ReleaseDate = m.ReleaseDate,
 
-                }).ToList();
+                    }).ToList();
             }
         }
 
@@ -150,7 +155,8 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Movie.Where(m => m.GenreID == genreID).
+                return db.Movie
+                    .Where(m => m.GenreID == genreID && m.IsDeleted == false).
                     Select(m => new ViewMovie
                     {
                         DirectorID = m.DirectorID,
@@ -169,8 +175,10 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Movie.OrderByDescending(m => m.Score).
-                    Select(m => new ViewMovie
+                return db.Movie
+                    .Where(m => m.IsDeleted == false)
+                    .OrderByDescending(m => m.Score)
+                    .Select(m => new ViewMovie
                     {
                         MovieID = m.MovieID,
                         MovieName = m.MovieName,
@@ -183,7 +191,7 @@ namespace IMDB.DAL
 
                         Score = m.Score,
                         ReleaseDate = m.ReleaseDate,
-                        
+
                     }).ToList();
             }
         }
@@ -192,8 +200,10 @@ namespace IMDB.DAL
         {
             using (IMDbContext db = new IMDbContext())
             {
-                return db.Movie.OrderByDescending(m => m.ReleaseDate).
-                    Select(m => new ViewMovie
+                return db.Movie
+                    .Where(m => m.IsDeleted == false)
+                    .OrderByDescending(m => m.ReleaseDate)
+                    .Select(m => new ViewMovie
                     {
                         MovieID = m.MovieID,
                         MovieName = m.MovieName,

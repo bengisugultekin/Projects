@@ -1,0 +1,13 @@
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\IMDB.Entity.dll.config
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\IMDB.Entity.dll
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\IMDB.Entity.pdb
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\EntityFramework.dll
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\EntityFramework.xml
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.Migrations.InitialCreate.resources
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.Migrations.AddIsDeleted.resources
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.dll
+C:\Users\Bengisu\Source\Repos\Projects\WebForms_IMDB_Asp.NET\IMDB.Entity\obj\Release\IMDB.Entity.pdb

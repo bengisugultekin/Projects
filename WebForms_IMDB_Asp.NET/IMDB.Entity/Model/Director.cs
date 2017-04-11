@@ -6,6 +6,8 @@
 
         public string DirectorName { get; set; }
 
+        public bool IsDeleted { get; set; }
+
         public override string ToString()
         {
             return DirectorName;

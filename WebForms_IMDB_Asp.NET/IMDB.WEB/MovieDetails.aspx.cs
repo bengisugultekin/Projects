@@ -7,7 +7,7 @@ namespace IMDB.WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.QueryString["ID"] != null )
+            if (Request.QueryString["ID"] != null)
             {
                 int id = int.Parse(Request.QueryString["ID"]);
 
@@ -22,7 +22,7 @@ namespace IMDB.WEB
 
                 Title = movie.MovieName + " (" + movie.ReleaseDate + ")";
             }
-            
+
         }
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
@@ -31,12 +31,12 @@ namespace IMDB.WEB
 
             var movie = MovieRepository.GetMovie(id);
 
-            movie.Score = movie.CalculateScore(DropDownListScore.SelectedIndex + 1);
-           
+            movie.Score = movie.CalculateScore(int.Parse(Score.Value));
+
 
             MovieRepository.UpdateMovieScore(movie);
 
-            Response.Redirect("MovieDetails.aspx?ID="+id);
+            Response.Redirect("MovieDetails.aspx?ID=" + id);
         }
     }
 }

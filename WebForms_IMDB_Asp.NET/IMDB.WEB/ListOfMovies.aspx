@@ -27,12 +27,12 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="ListOfMovies.aspx">IMDb</a>
+                <a class="navbar-brand" href="ListOfMovies.aspx" onclick="loadMovies()">IMDb</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Movie<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="ListOfMovies.aspx">List of Movies</a></li>
+                        <li><a onclick="onclick="loadMovies()" href="ListOfMovies.aspx">List of Movies</a></li>
                         <li><a href="AddMovie.aspx">Add Movie</a></li>
                     </ul>
                 </li>
@@ -68,7 +68,8 @@
                         <th><a href="ListOfMovies.aspx?sort=rating_desc">Score</a></th>                       
                         <th>Options</th>
                     </tr>
-
+                    
+                  
                     <asp:Repeater ID="Repeater1" runat="server">
                         <ItemTemplate>
                             <tr>
@@ -88,5 +89,6 @@
             </div>
         </div>
     </form>
+<
 </body>
 </html>
