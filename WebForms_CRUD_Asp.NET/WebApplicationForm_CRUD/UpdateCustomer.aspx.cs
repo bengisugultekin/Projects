@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using WebApplicationForm_CRUD.Models;
 
 namespace WebApplicationForm_CRUD
@@ -24,7 +19,7 @@ namespace WebApplicationForm_CRUD
                     TextBoxPhone.Text = result.PhoneNumber;
                     TextBoxAddress.Text = result.Address;
                 }
-            }           
+            }
         }
 
         protected void ButtonUpdate_Click(object sender, EventArgs e)
@@ -38,7 +33,7 @@ namespace WebApplicationForm_CRUD
                 result.CustomerSurname = TextBoxSurname.Text;
                 result.PhoneNumber = TextBoxPhone.Text;
                 result.Address = TextBoxAddress.Text;
-              
+
                 db.SaveChanges();
 
                 Response.Redirect("Customers.aspx");

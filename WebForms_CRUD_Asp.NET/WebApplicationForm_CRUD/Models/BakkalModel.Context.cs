@@ -9,22 +9,21 @@
 
 namespace WebApplicationForm_CRUD.Models
 {
-    using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class BakkalDBEntities : DbContext
     {
         public BakkalDBEntities()
             : base("name=BakkalDBEntities")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Customer> Customers { get; set; }
     }
 }

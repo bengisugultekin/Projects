@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApplicationForm_CRUD.Models;
 
@@ -29,7 +26,7 @@ namespace WebApplicationForm_CRUD
                     db.SaveChanges();
 
                     Response.Redirect("Customers.aspx");
-                
+
                 }
             }
         }

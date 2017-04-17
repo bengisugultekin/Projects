@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IMDbContext-Web.config Connection String" description="IMDbContext Connection String used in web.config by the application to access the database." defaultValue="data source=lilakitapevi.database.windows.net;initial catalog=MovieDB;Persist Security Info=False;user id=beng;password=1qa2ws3ed.,;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Bengisu\\Source\\Repos\\Projects\\WebForms_IMDB_Asp\.NET\\IMDB\.WEB\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IMDbContext']/@connectionString" />
-  </parameter>
-</parameters>
