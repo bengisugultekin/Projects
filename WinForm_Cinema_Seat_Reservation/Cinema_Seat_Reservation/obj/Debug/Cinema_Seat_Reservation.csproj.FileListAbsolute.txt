@@ -1,0 +1,16 @@
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\Cinema_Seat_Reservation.exe.config
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\Cinema_Seat_Reservation.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\Cinema_Seat_Reservation.pdb
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\EntityFramework.dll
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\EntityFramework.xml
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.SchedulesForm.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.Properties.Resources.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.SeatsForm.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.TicketForm.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.TicketInformationForm.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinForm_Cinema_Seat_Reservation\Cinema_Seat_Reservation\obj\Debug\Cinema_Seat_Reservation.pdb

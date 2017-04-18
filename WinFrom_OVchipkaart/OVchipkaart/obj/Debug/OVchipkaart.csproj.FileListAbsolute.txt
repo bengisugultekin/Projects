@@ -1,0 +1,10 @@
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\bin\Debug\OVchipkaart.exe.config
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\bin\Debug\OVchipkaart.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\bin\Debug\OVchipkaart.pdb
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.csprojResolveAssemblyReference.cache
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.Form1.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.Form2.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.Properties.Resources.resources
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.csproj.GenerateResource.Cache
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.exe
+C:\Users\Bengisu\Source\Repos\Projects\WinFrom_OVchipkaart\OVchipkaart\obj\Debug\OVchipkaart.pdb

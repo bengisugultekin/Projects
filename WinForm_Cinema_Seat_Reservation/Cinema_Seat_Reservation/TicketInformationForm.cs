@@ -1,13 +1,5 @@
-﻿using Cinema_Seat_Reservation.DatabaseConnection;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using System;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cinema_Seat_Reservation
@@ -32,7 +24,7 @@ namespace Cinema_Seat_Reservation
             {
                 labelSeatNumbers.Text += item + ", ";
             }
-            
+
 
 
             labelDay.Text = DateTime.Now.Day.ToString();
@@ -46,7 +38,7 @@ namespace Cinema_Seat_Reservation
                 {
                     labelStudent.Text = ticket.studentTicketList[ticket.studentTicketList.Count - 1].ToString();
                 }
-                
+
             }
 
             for (int i = 0; i < ticket.standardTicketList.Count; i++)
@@ -74,28 +66,9 @@ namespace Cinema_Seat_Reservation
 
         private void buttonContinue_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Payment succesfully completed.");
+            MessageBox.Show("Payment succesfully completed.");
 
-            using (MyModel connection = new MyModel())
-            {
-                Person person = new Person();
-                person.NameSurname = textBoxNameSurname.Text;
-                person.Email = textBoxEmail.Text;
-                person.PhoneNumber = textBoxPhone.Text;
-                person.Address = textBoxAddress.Text;
-                person.CreditCardNumber = textBoxCreditCardNumber.Text;
-                person.ExpirationMonth = int.Parse(comboBoxMonth.SelectedItem.ToString());
-                person.ExpirationYear = int.Parse(comboBoxYear.SelectedItem.ToString());
-                person.Cvv = int.Parse(textBoxCVV.Text);
-                person.totalPrice = ticket.total;
-
-                connection.Person.Add(person);
-                connection.Ticket.Add(ticket);
-                connection.SaveChanges();
-
-            }
-
-                Application.Exit();
+            Application.Exit();
         }
 
         private void linkBackToSchedules_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cinema_Seat_Reservation
@@ -36,7 +30,7 @@ namespace Cinema_Seat_Reservation
                         seat.Click += Button_Click;
                         seat.Height = 30;
                         seat.Width = 30;
-                        
+
                         seat.Font = new Font("Arial", 8, FontStyle.Bold);
                         seat.Text = counter.ToString();
 
@@ -97,7 +91,7 @@ namespace Cinema_Seat_Reservation
                                     }
                                 }
                             }
-                        }            
+                        }
 
 
                         panelSeats.Controls.Add(seat);
@@ -107,8 +101,8 @@ namespace Cinema_Seat_Reservation
                 }
                 counter = 1;
             }
-            
-           
+
+
         }
         bool flag = true;
 
@@ -121,7 +115,7 @@ namespace Cinema_Seat_Reservation
             if (flag == false && chosenSeat.BackColor == Color.Gray) //quantitiy aşarsa uyarı ver
             {
                 MessageBox.Show("You can choose " + ticket.quantity + " seats.");
-                
+
             }
             if (chosenSeat.BackColor == Color.DeepPink) //koltuktan vazgeçtik geri al
             {
@@ -140,7 +134,7 @@ namespace Cinema_Seat_Reservation
 
                 }
             }
-            else if(chosenSeat.BackColor == Color.Gray && flag == true) // koltuğu seçtik
+            else if (chosenSeat.BackColor == Color.Gray && flag == true) // koltuğu seçtik
             {
                 LabelChosenSeat.Text = string.Empty;
 
@@ -159,8 +153,8 @@ namespace Cinema_Seat_Reservation
             if (clickCounter == 0)
             {
                 flag = false;
-                
-            }     
+
+            }
 
         }
 
@@ -180,7 +174,7 @@ namespace Cinema_Seat_Reservation
                 TicketInformationForm ticketInfoForm = new TicketInformationForm(ticket);
                 ticketInfoForm.Show();
             }
-            
+
         }
 
         private void linkBackToSchedules_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
